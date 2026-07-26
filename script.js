@@ -1,5 +1,7 @@
-// Point this at wherever your FastAPI app is running.
-const API_BASE = 'http://127.0.0.1:8000';
+// In production (Vercel), config.js sets window.APP_CONFIG.API_BASE from
+// your Render URL at build time. Locally, config.js won't exist yet, so
+// this falls back to localhost automatically — no setup needed for local dev.
+const API_BASE = "https://todolist-backend-k16k.onrender.com";
 
 const QUOTES = [
   '"Doing what you love is the cornerstone of having abundance in your life." — Wayne Dyer',
